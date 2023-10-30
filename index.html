@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Open+Sans:wght@300&family=Playpen+Sans&family=Roboto:ital,wght@1,500&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Create your Post</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Caption:</p>
+          <textarea name="" id="" cols="50%" rows="3">Deja tu comentario aca</textarea>
+          <div>
+            <button class="btn btn-light"><i class="fa-solid fa-camera"></i></button>
+            <button class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand"><i class="fa-brands fa-instagram pr-2"></i>Instagram</a>
+    <div>
+      <button class="btn btn-success my-2 my-sm-0" type="submit" data-toggle="modal" data-target="#exampleModal">Create
+        New Post</button>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-gear"></i>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item" href="#">Profile</a>
+          <a class="dropdown-item" href="#">Administrar</a>
+          <a class="dropdown-item" href="#">Save Setting</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item text-danger" href="#">Log Out</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="d-flex justify-content-center">
+
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link active" href="#grid" data-toggle="tab"><i class="fa-solid fa-table-cells"></i></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#feed" data-toggle="tab"><i class="fa-solid fa-square"></i></a>
+      </li>
+
+    </ul>
+
+  </div>
+
+  <!--este va ser la primera pagina-->
+  <div class="tab-content">
+    <div id="grid" class="tab-pane active">
+
+      <div class="container">
+
+        <div class="row my-2">
+          <div class="col-sm-12 col-md-6 col-lg-4"><img src="https://picsum.photos/370/350" alt=""></div>
+          <div class="col-sm-12 col-md-6 col-lg-4"><img src="https://picsum.photos/370/350" alt=""></div>
+          <div class="col-sm-12 col-md-6 col-lg-4"><img src="https://picsum.photos/370/350" alt=""></div>
+        </div>
+
+        <div class="row my-2">
+          <div class="col-sm-12 col-md-6 col-lg-4"><img src="https://picsum.photos/370/350" alt=""></div>
+          <div class="col-sm-12 col-md-6 col-lg-4"><img src="https://picsum.photos/370/350" alt=""></div>
+          <div class="col-sm-12 col-md-6 col-lg-4"><img src="https://picsum.photos/370/350" alt=""></div>
+        </div>
+
+        <div class="row my-2">
+          <div class="col-sm-12 col-md-6 col-lg-4"><img src="https://picsum.photos/370/350" alt=""></div>
+          <div class="col-sm-12 col-md-6 col-lg-4"><img src="https://picsum.photos/370/350" alt=""></div>
+          <div class="col-sm-12 col-md-6 col-lg-4"><img src="https://picsum.photos/370/350" alt=""></div>
+        </div>
+
+      </div>
+
+
+
+    </div>
+    <!--este va ser la segunda pagina-->
+    <div id="feed" class="tab-pane">
+
+
+
+      <div class="d-flex flex-column align-items-center justify-content-center p-3">
+        <!--Primer post-->
+
+        <div class="card border-light mb-3 shadow p-3 mb-5 bg-white rounded" style="max-width: 50rem;">
+          <div class="card-header bg-transparent border-light p-0">
+            <div class="header d-flex justify-content-between">
+              <p style="font-family: 'Agbalumo', sans-serif">My primera foto</p>
+              <p>8/12</p>
+
+            </div>
+          </div>
+          <div class="card-body text-success p-0 margin-0">
+            <h5 class="card-title"><img src="https://picsum.photos/500" alt=""></h5>
+
+          </div>
+          <div class="card-footer bg-transparent border-light p-0">
+            <div class="footer">
+              <p><small><strong>1.000.021 likes</strong></small></p>
+              <p>Este es un ejemplo de una imagen </p>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!--Segundo post-->
+        <div class="card border-light mb-3 shadow p-3 mb-5 bg-white rounded" style="max-width: 50rem;">
+          <div class="card-header bg-transparent border-light p-0">
+            <div class="header d-flex justify-content-between">
+              <p style="font-family: 'Agbalumo', sans-serif">My Segunda foto</p>
+              <p>8/12</p>
+
+            </div>
+          </div>
+          <div class="card-body text-success p-0 margin-0">
+            <h5 class="card-title"><img src="https://picsum.photos/500" alt=""></h5>
+
+          </div>
+          <div class="card-footer bg-transparent border-light p-0">
+            <div class="footer">
+              <p><small><strong>1.000.021 likes</strong></small></p>
+              <p>Este es un ejemplo de una imagen </p>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!--Tercer post-->
+        <div class="card border-light mb-3 shadow p-3 mb-5 bg-white rounded" style="max-width: 50rem;">
+          <div class="card-header bg-transparent border-light p-0">
+            <div class="header d-flex justify-content-between">
+              <p style="font-family: 'Agbalumo', sans-serif">My Tercera foto</p>
+              <p>8/12</p>
+
+            </div>
+          </div>
+          <div class="card-body text-success p-0 margin-0">
+            <h5 class="card-title"><img src="https://picsum.photos/500" alt=""></h5>
+
+          </div>
+          <div class="card-footer bg-transparent border-light p-0">
+            <div class="footer">
+              <p><small><strong>1.000.021 likes</strong></small></p>
+              <p>Este es un ejemplo de una imagen </p>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+</body>
+
+
+</html>
